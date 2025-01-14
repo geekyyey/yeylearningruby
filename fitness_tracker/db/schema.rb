@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_01_14_025026) do
+ActiveRecord::Schema[7.1].define(version: 2025_01_14_031251) do
+  create_table "water_logs", force: :cascade do |t|
+    t.date "date"
+    t.integer "intake"
+    t.integer "goal"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "waterlogs", force: :cascade do |t|
     t.date "date"
     t.integer "intake"
