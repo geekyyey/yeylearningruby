@@ -1,0 +1,2 @@
+class Waterlog < ApplicationRecord
+end
